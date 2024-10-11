@@ -39,6 +39,7 @@ body {
   border-radius: 1rem;
   color: var(--white);
   font-family: Inter;
+  margin-bottom: 1rem;
 }
 
 header,
@@ -102,6 +103,12 @@ button {
   border: none;
   border-radius: 0.5rem;
   font-weight: var(--font-bold);
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: var(--green);
+  color: var(--medium-grey);
 }
 
 /*Frontend mentor files*/
@@ -109,6 +116,7 @@ button {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--white);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
