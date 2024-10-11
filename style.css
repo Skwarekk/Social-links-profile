@@ -6,6 +6,12 @@
   --light-grey: hsl(0, 0%, 20%);
   --medium-grey: hsl(0, 0%, 12%);
   --dark-gray: hsl(0, 0%, 8%);
+
+  --font-light: 400;
+  --font-medium: 600;
+  --font-bold: 700;
+
+  --font-size: 0.9rem;
 }
 
 * {
@@ -25,12 +31,77 @@ body {
 }
 
 .container {
+  display: grid;
+  grid-template-rows: 50%, 50%;
+  grid-template-columns: 100%;
   background-color: var(--medium-grey);
-  max-width: 40%;
-  padding: 20px;
+  padding: 2rem;
   border-radius: 1rem;
   color: var(--white);
   font-family: Inter;
+}
+
+header,
+main {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.header-txt h1 {
+  margin-bottom: 0.5rem;
+  font-weight: var(--font-bold);
+}
+
+.header-txt span {
+  color: var(--green);
+  font-size: var(--font-size);
+  font-weight: var(--font-medium);
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 30%;
+  border-radius: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+main span {
+  margin-bottom: 1rem;
+  font-size: var(--font-size);
+  color: var(--white);
+}
+
+.buttons {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  padding: 0.7rem 5rem;
+  font-size: var(--font-size);
+  margin-bottom: 1rem;
+  background-color: var(--light-grey);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: var(--font-bold);
 }
 
 /*Frontend mentor files*/
